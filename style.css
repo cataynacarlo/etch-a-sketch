@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+#head-container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(40, 255, 219);
+    font-size: 80px;
+}
+
+#body-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 154, 176);
+}
+
+#options-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+
+#sketchpad-container{
+    margin-left: 10%;
+    padding: 5%;
+    background-color: lightblue;
+}
+
+#sketchpad{
+    height: 750px;
+    width: 750px;
+    background-color: darkred;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+}
+
+.sketch-box{
+    height: 187.5px;
+    width: 187.5px;
+    color: blueviolet;
+
+}
+
+.sketch-box:hover{
+    background-color: aqua;
+}

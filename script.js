@@ -6,6 +6,7 @@ console.log(MAX_HEIGHT)
 console.log(MAX_WIDTH)
 console.log("Hello")
 
+let previous_dimension;
 const sketchpad_container = document.querySelector("#sketchpad");
 
 console.log(sketchpad_container)
@@ -19,6 +20,14 @@ function applyChanges(){
 
     let square_dimension = MAX_HEIGHT/dimension;
     let converteddimension = String(square_dimension) + "px";
+
+    if(square_dimension==previous_dimension) return
+
+    else{
+        while (sketchpad_container.firstChild) {
+            sketchpad_container.firstChild.remove()
+        }
+    }
 
     for(let i=0;i<dimension*dimension;i++){
         new_div = document.createElement('div');
@@ -35,6 +44,8 @@ function applyChanges(){
         //console.log("adding a new div!");
         
     }
+
+    previous_dimension = square_dimension;
     
 }
 

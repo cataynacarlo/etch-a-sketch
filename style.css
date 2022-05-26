@@ -8,36 +8,91 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(40, 255, 219);
-    font-size: 80px;
+    background-color: #ACCBE1;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+
+h1 {
+    background: linear-gradient(to right, #f32170,
+    #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #body-container{
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 154, 176);
+    background-color: #CEE5F2;
 }
 
 #options-container{
+    width: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-top: 5%;
+    margin-right: 0;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: aquamarine;
+    justify-content: center;
+    background-color: #7C98B3;
+    margin-right: 0;
+    border-radius: 10px;
 }
 
 #sketchpad-container{
-    margin-left: 10%;
+    margin-left: 0;
     padding: 5%;
-    background-color: lightblue;
+    background-color: #CEE5F2;
+}
+
+#inputcolor, #changebutton, #resetbutton {
+    margin-top: 0;
+    width: 200px;
+    height: 80px;
+    font-size: xx-large;
+    font-family: 'Caveat', cursive;
+    
+}
+
+
+#changebutton:hover, #resetbutton:hover {
+    background-color: blueviolet;  
+}
+
+
+#inputrange {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.reset-container {
+    border: 1px solid;
+    margin-top: 5px;
+}
+
+#slide-value {
+    display: flex;
+    border: 2px solid;
+    padding: 1px;
+    height: 80px;
+    width: 200px;
+    font-size: xx-large;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    align-items: center;
+    justify-content: center;
+}
+
+#slide-value:hover{
+    background-color: blueviolet;  
 }
 
 #sketchpad{
     height: 750px;
     width: 750px;
-    background-color: darkred;
+    background-color: rgb(255, 235, 235);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -53,4 +108,27 @@ body {
 
 .sketch-box:hover{
     background-color: aqua;
+}
+
+
+#lasttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    background-color:#ACCBE1;
+    padding-top: 10px;
+}
+#lasttext p{
+
+    margin: 5px;
+}
+
+.fa-github{
+    color: black;
+}
+
+.fa-linkedin{
+    color: midnightblue;
 }

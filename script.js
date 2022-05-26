@@ -78,7 +78,7 @@ function clearSketchpad(){
     }
     for(let i=0;i<dimension*dimension;i++){
         new_div = document.createElement('div');
-        new_div.style.cssText = 'box-sizing:border-box; display:flex; color: orange; background-color:rgb(255, 235, 235)';          
+        new_div.style.cssText = 'box-sizing:border-box; display:flex; color: orange; background-color:rgb(255, 255, 255)';          
         new_div.style.width = converteddimension;
         new_div.style.height = converteddimension;
         let new_id = "box-" + String(i);

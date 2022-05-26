@@ -3,14 +3,14 @@ body {
 }
 
 #head-container{
-    height: 200px;
+    height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ACCBE1;
     font-family: 'Caveat', cursive;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 h1 {
@@ -23,15 +23,18 @@ h1 {
 #body-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #CEE5F2;
+    justify-content: center;
 }
 
 #options-container{
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    margin-left: 10%;
+    margin-right: 0;
     margin-top: 5%;
     margin-right: 0;
     align-items: center;
@@ -42,8 +45,9 @@ h1 {
 }
 
 #sketchpad-container{
-    margin-left: 0;
+    margin-left: 5%;
     padding: 5%;
+    padding-left: 0;
     background-color: #CEE5F2;
 }
 
@@ -53,9 +57,9 @@ h1 {
     height: 80px;
     font-size: xx-large;
     font-family: 'Caveat', cursive;
+    border-radius: 10px;
     
 }
-
 
 #changebutton:hover, #resetbutton:hover {
     background-color: blueviolet;  
@@ -68,7 +72,6 @@ h1 {
     margin-bottom: 10px;
 }
 .reset-container {
-    border: 1px solid;
     margin-top: 5px;
 }
 
@@ -83,6 +86,7 @@ h1 {
     font-family: 'Caveat', cursive;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
 #slide-value:hover{
@@ -90,8 +94,8 @@ h1 {
 }
 
 #sketchpad{
-    height: 750px;
-    width: 750px;
+    height: 400px;
+    width: 400px;
     background-color: rgb(255, 235, 235);
     display: flex;
     flex-wrap: wrap;

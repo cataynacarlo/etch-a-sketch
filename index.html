@@ -18,8 +18,12 @@
         <div class="color-container">
             <input type="color" id="inputcolor">
         </div>
+
         <div class="slide-container">
-            <input type="range" min="1" max="100" value="4" class="slider" id="inputrange">
+            <input type="range" min="1" max="100" value="4" class="slider" id="inputrange" onchange="updateTextInput(this.value);">
+        </div>
+        <div class="slide-container" id="slide-value">
+            4 x 4
         </div>
         <div class="reset-container">
             <button type="buton" id="changebutton"> APPLY </button>
